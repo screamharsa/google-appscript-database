@@ -2,13 +2,32 @@
 <html>
   <head>
     <base target="_top" />
-    <!--INCLUDE REQUIRED EXTERNAL JAVASCRIPT AND CSS LIBRARIES-->
-    <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
-    <script src="https://cdn.datatables.net/1.12.1/js/jquery.dataTables.min.js"></script>
-    <script src="https://cdn.datatables.net/1.12.1/js/dataTables.bootstrap5.min.js"></script>
-    <script src="https://cdn.datatables.net/responsive/2.3.0/js/dataTables.responsive.js"></script>
-    <script src="datatable.js"></script>
 
+    <!-- BOOTSTRAP 4! -->
+    <!-- <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/css/bootstrap.min.css"/>
+  <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.12.1/css/dataTables.bootstrap4.min.css"/>
+  <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/buttons/2.2.3/css/buttons.bootstrap4.min.css"/>
+  <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/responsive/2.3.0/css/responsive.bootstrap4.min.css"/>
+  <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/fixedheader/3.2.4/css/fixedHeader.bootstrap4.min.css"/>
+
+  <script type="text/javascript" src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/js/bootstrap.min.js"></script>
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jszip/2.5.0/jszip.min.js"></script>
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/pdfmake/0.1.36/pdfmake.min.js"></script>
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/pdfmake/0.1.36/vfs_fonts.js"></script>
+  <script type="text/javascript" src="https://cdn.datatables.net/1.12.1/js/jquery.dataTables.min.js"></script>
+  <script type="text/javascript" src="https://cdn.datatables.net/1.12.1/js/dataTables.bootstrap4.min.js"></script>
+  <script type="text/javascript" src="https://cdn.datatables.net/buttons/2.2.3/js/dataTables.buttons.min.js"></script>
+  <script type="text/javascript" src="https://cdn.datatables.net/buttons/2.2.3/js/buttons.bootstrap4.min.js"></script>
+  <script type="text/javascript" src="https://cdn.datatables.net/buttons/2.2.3/js/buttons.colVis.min.js"></script>
+  <script type="text/javascript" src="https://cdn.datatables.net/buttons/2.2.3/js/buttons.html5.min.js"></script>
+  <script type="text/javascript" src="https://cdn.datatables.net/buttons/2.2.3/js/buttons.print.min.js"></script>
+  <script type="text/javascript" src="https://cdn.datatables.net/responsive/2.3.0/js/dataTables.responsive.min.js"></script>
+  <script type="text/javascript" src="https://cdn.datatables.net/responsive/2.3.0/js/responsive.bootstrap4.js"></script>
+  <script type="text/javascript" src="https://cdn.datatables.net/fixedheader/3.2.4/js/dataTables.fixedHeader.min.js"></script> -->
+    <!-- BOOTSTRAP 4! -->
+
+    <!-- BOOTSTRAP 5! -->
     <link
       rel="stylesheet"
       type="text/css"
@@ -22,97 +41,292 @@
     <link
       rel="stylesheet"
       type="text/css"
-      href="https://cdn.datatables.net/responsive/2.3.0/css/responsive.dataTables.css"
+      href="https://cdn.datatables.net/buttons/2.2.3/css/buttons.bootstrap5.min.css"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdn.datatables.net/fixedheader/3.2.4/css/fixedHeader.bootstrap5.min.css"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdn.datatables.net/responsive/2.3.0/css/responsive.bootstrap5.min.css"
     />
 
-    <!-- <?!= include('jscode'); ?> -->
-    <!--INCLUDE JavaScript.html FILE-->
+    <script
+      type="text/javascript"
+      src="https://code.jquery.com/jquery-3.6.0.min.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.1.3/js/bootstrap.bundle.min.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="https://cdnjs.cloudflare.com/ajax/libs/jszip/2.5.0/jszip.min.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="https://cdnjs.cloudflare.com/ajax/libs/pdfmake/0.1.36/pdfmake.min.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="https://cdnjs.cloudflare.com/ajax/libs/pdfmake/0.1.36/vfs_fonts.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="https://cdn.datatables.net/1.12.1/js/jquery.dataTables.min.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="https://cdn.datatables.net/1.12.1/js/dataTables.bootstrap5.min.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="https://cdn.datatables.net/buttons/2.2.3/js/dataTables.buttons.min.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="https://cdn.datatables.net/buttons/2.2.3/js/buttons.bootstrap5.min.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="https://cdn.datatables.net/buttons/2.2.3/js/buttons.colVis.min.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="https://cdn.datatables.net/buttons/2.2.3/js/buttons.html5.min.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="https://cdn.datatables.net/buttons/2.2.3/js/buttons.print.min.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="https://cdn.datatables.net/fixedheader/3.2.4/js/dataTables.fixedHeader.min.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="https://cdn.datatables.net/responsive/2.3.0/js/dataTables.responsive.min.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="https://cdn.datatables.net/responsive/2.3.0/js/responsive.bootstrap5.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="https://cdn.datatables.net/plug-ins/1.12.1/filtering/row-based/TableTools.ShowSelectedOnly.js"
+    ></script>
+    <!-- BOOTSTRAP 5! -->
+
     <style>
-      table#data-table thead {
-        background-color: rgb(38, 38, 38);
-        color: white;
-      }
-      table#data-table tr {
-        cursor: pointer;
-        overflow: hidden;
-        /* this is what fixes the expansion */
-        text-overflow: ellipsis;
-        /* not supported in all browsers, but I accepted the tradeoff */
-        white-space: nowrap;
+      main {
+        display: flex;
+        flex-direction: column;
+        margin: 30px auto;
+        height: 90vh;
+        max-height: 100vh;
+        max-width: 100vw;
+        width: 90vw;
       }
 
-      table#data-table tbody tr:not(.child):hover {
-        background-color: #4ab4f7;
-        color: white;
-      }
-
-      table#data-table th {
+      //COLUMN HEADER ELEMENT
+      .table > thead {
+        background-color: var(--bs-gray-800);
+        color: var(--bs-gray-100);
+        border-color: var(--bs-gray-800);
         text-align: center;
-        padding: 5px;
       }
 
-      /* table#data-table td.number {
-      text-align: right !important;
-    }
+      //COLUMN HEADER ELEMENT
 
-    table#data-table td.staff-name {
-      text-align: center !important;
-    }
-
-    table#data-table td.no-nota {
-      text-align: center !important;
-    }  */
-
-      .page-item.active .page-link {
-        color: #fff !important;
-        background-color: #4ab4f7 !important;
-        border-color: #4ab4f7 !important;
-      }
-
-      .page-link {
-        color: #000 !important;
-        background-color: #fff !important;
-        border: 1px solid #dee2e6 !important;
-      }
-
-      .page-link:hover {
-        color: #fff !important;
-        background-color: #4ab4f7 !important;
-        border-color: #4ab4f7 !important;
-      }
-
-      div.container {
-        margin-bottom: 10px;
-      }
-
-      .column-render {
+      td.upper {
         text-transform: uppercase;
       }
+
+      .input-group-sm {
+        margin-top: 0.5rem;
+      }
+      .col-sm-12 {
+        margin-bottom: 0.7rem;
+      }
+      .img-contain {
+        background-repeat: no-repeat;
+        background-size: contain;
+        width: 70%;
+      }
     </style>
-
-    <!-- <style>
-    table#data-table tr {
-      overflow: hidden;
-      /* this is what fixes the expansion */
-      text-overflow: ellipsis;
-      /* not supported in all browsers, but I accepted the tradeoff */
-      white-space: nowrap;
-    }
-
-    table#data-table th {
-      text-align: center;
-    }
-  </style> -->
   </head>
 
   <body>
-    <div class="container">
-      <br />
-      <div class="row">
-        <table id="data-table" class="table display" style="width: 100%">
-          <!-- TABLE DATA IS ADDED BY THE showData() JAVASCRIPT FUNCTION ABOVE -->
-        </table>
+    <!-- HEADER ELEMENT -->
+    <header></header>
+    <!-- HEADER ELEMENT -->
+
+    <!-- MAIN ELEMENT -->
+    <main>
+      <!-- <div class="text-center">
+      <div class="spinner-border" role="status">
+        <span class="visually-hidden">Loading...</span>
       </div>
-    </div>
+    </div> -->
+      <div class="container-fluid">
+        <div class="container-fluid text-center img-contain">
+          <img src="" class="img-fluid" alt="butler/logo" id="butler" />
+        </div>
+        <div class="container-fluid d-flex justify-content-center">
+          <div
+            class="input-group input-group-sm mb-3 w-25 d-flex"
+            id="search-section"
+          >
+            <input
+              type="text"
+              id="main-search"
+              class="search-box form-control"
+              minlength="4"
+              maxlength="20"
+              required
+            />
+            <button
+              type="button"
+              class="search-button btn btn-outline-secondary"
+              id="button-addon2"
+              aria-label="Recipient's username"
+              aria-describedby="basic-addon2"
+            >
+              Search
+            </button>
+          </div>
+        </div>
+        <br />
+        <!-- <div><label>Search : </label><input type="text" id="my-search" placeholder="what you are searching"></div> -->
+        <div class="row table-responsive" id="DT" style="display: none">
+          <table
+            id="cust-table"
+            class="table table-hover table-sm table-bordered dt-responsive nowrap"
+            style="width: 100%"
+          ></table>
+        </div>
+      </div>
+    </main>
+    <!-- MAIN ELEMENT -->
+
+    <!-- SCRIPT LINK -->
+
+    <!-- SCRIPT LINK -->
+
+    <!-- FOOTER ELEMENT -->
+    <footer></footer>
+    <!-- FOOTER ELEMENT -->
+
+    <!-- WRITTEN SCRIPT -->
+    <script>
+      document.addEventListener("DOMContentLoaded", pageLoad)
+
+      function pageLoad() {
+        loadData()
+      }
+
+      function loadData() {
+        google.script.run
+          .withSuccessHandler((jsData) => {
+            const table = new DataTable("#cust-table", {
+              // options
+              data: jsData,
+              language: {
+                decimal: ",",
+                thousands: ".",
+              },
+              columns: [
+                { data: "Date", title: "Date", width: "100px" },
+                { data: "Receipt", title: "Receipt", width: "60px" },
+                { data: "Name", title: "Name", width: "160px" },
+                { data: "Address", title: "Address", width: "200px" },
+                {
+                  data: "CCY",
+                  title: "CCY",
+                  className: "upper dt-body-center",
+                  width: "55px",
+                },
+                {
+                  data: "Amount",
+                  title: "Amount",
+                  className: "dt-body-right",
+                  width: "70px",
+                },
+                {
+                  data: "Rate",
+                  title: "Rate",
+                  className: "dt-body-right",
+                  width: "70px",
+                },
+                {
+                  data: "Total",
+                  title: "Total",
+                  className: "dt-body-right",
+                  width: "100px",
+                },
+                { data: "Employee", title: "Employee", width: "180px" },
+                { data: "Branch", title: "Branch" },
+              ],
+              fixedHeader: true,
+              dom:
+                "<'row'<'col-sm-12 col-md-4'l><'col-sm-12 d-flex justify-content-center col-md-4'B><'col-sm-12 col-md-4'>>" +
+                "<'row'<'col-sm-12'tr>>" +
+                "<'row'<'col-sm-12 col-md-5'i><'col-sm-12 col-md-7'p>>",
+              buttons: ["print", "csv", "colvis"],
+              pageLength: 50,
+              autoWidth: false,
+              responsive: {
+                breakpoints: [
+                  { name: "Employee", width: 1280 },
+                  { name: "Date", width: 1280 },
+                ],
+              },
+            })
+            $("#cust-table").on("search.dt", function () {
+              const info = table.page.info()
+              // console.log("Row Shown", info.recordsDisplay)
+
+              if (info.recordsDisplay > 0) {
+                $("#DT").show()
+              } else {
+                $("#DT").hide()
+              }
+            })
+
+            $("#main-search").keyup(function (event) {
+              if (event.keyCode === 13) {
+                $("#button-addon2").click()
+              }
+            })
+
+            $("#button-addon2").click(function () {
+              const stringData = document.getElementById("main-search")
+              const dataRes = stringData.value
+              if (dataRes === "" || dataRes.length < 3) {
+                $("#DT").hide()
+                alert("Need 4 or more characters")
+              } else {
+                table.search(dataRes).responsive.recalc().draw()
+              }
+            })
+          })
+          .withFailureHandler((er) => {})
+          .datatableView()
+      }
+
+      google.script.run
+        .withSuccessHandler(function (bytes) {
+          showImage(bytes)
+        })
+        .loadImageBytes()
+
+      function showImage(bytes) {
+        document.getElementById("butler").src = "data:image/png;base64," + bytes
+      }
+    </script>
+    <!-- WRITTEN SCRIPT -->
   </body>
 </html>
